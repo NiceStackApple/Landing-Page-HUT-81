@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Dirgahayu Republik Indonesia ke-81 — Merayakan semangat kemerdekaan melalui karya digital. 17 Agustus 2026." />
+    <meta name="theme-color" content="#B40018" />
+    <title>HUT RI ke-81 — Dirgahayu Republik Indonesia</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ============================================
+       NAVBAR
+       ============================================ -->
+    <!-- Hidden checkbox for mobile menu toggle (CSS-only) -->
+    <input type="checkbox" id="menuToggle" class="menu-toggle-checkbox" />
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <a href="#home" class="navbar__logo">
+                <img src="assets/logo-udinus.png" alt="Logo UDINUS" />
+                <span>HUT RI 81</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="navbar__links" id="navLinks">
+                <li><label for="menuToggle"><a href="#home">Home</a></label></li>
+                <li><label for="menuToggle"><a href="#team">Team</a></label></li>
+                <li><label for="menuToggle"><a href="#process">Process</a></label></li>
+                <li><label for="menuToggle"><a href="#tools">Tools</a></label></li>
+                <li><label for="menuToggle"><a href="#gallery">Gallery</a></label></li>
+            </ul>
+
+            <!-- Hamburger Label (mobile) — acts as CSS toggle -->
+            <label for="menuToggle" class="navbar__hamburger" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </nav>
+
+    <!-- Mobile Overlay (clicking closes menu) -->
+    <label for="menuToggle" class="nav-overlay"></label>
+
+    <!-- ============================================
+       SECTION 1 — HERO
+       ============================================ -->
+    <section class="hero" id="home">
+        <!-- Background Image (CSS parallax via background-attachment) -->
+        <div class="hero__bg"></div>
+
+        <!-- Dark Overlay -->
+        <div class="hero__overlay"></div>
+
+        <!-- Content -->
+        <div class="hero__content">
+            <h1 class="hero__title">
+                <span>DIRGAHAYU</span>
+                <span>REPUBLIK INDONESIA KE-81</span>
+            </h1>
+            <p class="hero__subtitle">17 Agustus 2026</p>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="hero__scroll">
+            <span>Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ============================================
+       SECTION 2 — WELCOME
+       ============================================ -->
+    <section class="welcome section-padding" id="welcome">
+        <div class="container">
+            <div class="scroll-reveal">
+                <h3>INDONESIA EMAS 2045</h3>
+                <h2 class="welcome__heading">Selamat Datang</h2>
+            </div>
+
+            <div class="welcome__text scroll-reveal reveal-delay-2">
+                <p>
+                    Dirgahayu Republik Indonesia ke-81.<br />
+                    Kemerdekaan bukan hanya tentang mengenang masa lalu,<br />
+                    tetapi juga tentang menciptakan masa depan.
+                </p>
+                <p>
+                    Melalui website ini kami ingin merayakan semangat berkarya,<br />
+                    berkolaborasi, dan terus belajar.
+                </p>
+                <p>
+                    Semoga setiap langkah kecil hari ini menjadi bagian<br />
+                    dari Indonesia Emas 2045.
+                </p>
+            </div>
+
+            <div class="welcome__divider scroll-reveal reveal-delay-3"></div>
+        </div>
+    </section>
+
+    <!-- ============================================
+       SECTION 3 — MEET OUR TEAM
+       ============================================ -->
+    <section class="team section-padding" id="team">
+        <div class="container">
+            <!-- Heading -->
+            <div class="team__heading scroll-reveal">
+                <h2>MEET<br />OUR TEAM</h2>
+            </div>
+
+            <!-- Watermark Background -->
+            <div class="team__watermark" aria-hidden="true">
+                <span>UDINUS</span>
+                <span>UDINUS</span>
+                <span>UDINUS</span>
+            </div>
+
+            <!-- Team Grid -->
+            <div class="team__grid">
+                <!-- Member 1 -->
+                <div class="team__member scroll-scale reveal-delay-1">
+                    <img src="assets/team1.png" alt="Team Member 1" />
+                    <div class="team__card">
+                        <div class="team__card-name">Rangga</div>
+                        <div class="team__card-role">Critical</div>
+                        <div class="team__card-quote">"Hati-hati dengan kalimatmu sendiri."</div>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="team__member scroll-scale reveal-delay-2">
+                    <img src="assets/team2.png" alt="Team Member 2" />
+                    <div class="team__card">
+                        <div class="team__card-name">Fajri</div>
+                        <div class="team__card-role">Creative</div>
+                        <div class="team__card-quote">"Art is art."</div>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="team__member scroll-scale reveal-delay-3">
+                    <img src="assets/team3.png" alt="Team Member 3" />
+                    <div class="team__card">
+                        <div class="team__card-name">Fadin</div>
+                        <div class="team__card-role">Reviewer</div>
+                        <div class="team__card-quote">"Sibuk mencari Bugs."</div>
+                    </div>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="team__member scroll-scale reveal-delay-4">
+                    <img src="assets/team4.png" alt="Team Member 4" />
+                    <div class="team__card">
+                        <div class="team__card-name">Nico</div>
+                        <div class="team__card-role">Vibe Coder</div>
+                        <div class="team__card-quote">"Ai bukanlah pengganti, tapi Ai hanya alat."</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+       SECTION 4 — CREATIVE PROCESS
+       ============================================ -->
+    <section class="process section-padding" id="process">
+        <div class="container">
+            <!-- Heading -->
+            <div class="process__heading scroll-reveal">
+                <h2>CREATIVE PROCESS</h2>
+                <p>From concept to reality</p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="process__timeline">
+                <!-- Step 1: Idea -->
+                <div class="process__step scroll-reveal reveal-delay-1">
+                    <div class="process__icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2a7 7 0 0 1 4 12.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26A7 7 0 0 1 12 2z" />
+                            <line x1="9" y1="21" x2="15" y2="21" />
+                            <line x1="10" y1="24" x2="14" y2="24" />
+                        </svg>
+                    </div>
+                    <div class="process__label">IDEA</div>
+                    <div class="process__desc">Brainstorm & conceptualize</div>
+                </div>
+
+                <!-- Step 2: Design -->
+                <div class="process__step scroll-reveal reveal-delay-2">
+                    <div class="process__icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                            <circle cx="8.5" cy="8.5" r="1.5" />
+                            <polyline points="21 15 16 10 5 21" />
+                        </svg>
+                    </div>
+                    <div class="process__label">DESIGN</div>
+                    <div class="process__desc">Visual composition & layout</div>
+                </div>
+
+                <!-- Step 3: AI Enhancement -->
+                <div class="process__step scroll-reveal reveal-delay-3">
+                    <div class="process__icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <div class="process__label">AI ENHANCEMENT</div>
+                    <div class="process__desc">Smart refinement & polish</div>
+                </div>
+
+                <!-- Step 4: Final Result -->
+                <div class="process__step scroll-reveal reveal-delay-4">
+                    <div class="process__icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                    </div>
+                    <div class="process__label">FINAL RESULT</div>
+                    <div class="process__desc">Production-ready output</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+       SECTION 5 — TOOLS WE USE
+       ============================================ -->
+    <section class="tools" id="tools">
+        <!-- Heading -->
+        <div class="tools__heading scroll-reveal">
+            <h2>TOOLS WE USE</h2>
+            <p>Powered by modern technology</p>
+        </div>
+
+        <!-- Marquee Row -->
+        <div class="marquee">
+            <!-- Track 1 -->
+            <div class="marquee__track">
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">✨</span>
+                    <span class="marquee__item-name">Gemini</span>
+                </div>
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">🤖</span>
+                    <span class="marquee__item-name">ChatGPT</span>
+                </div>
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">🎨</span>
+                    <span class="marquee__item-name">Canva</span>
+                </div>
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">🖌️</span>
+                    <span class="marquee__item-name">Photoshop</span>
+                </div>
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">✏️</span>
+                    <span class="marquee__item-name">Illustrator</span>
+                </div>
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">💻</span>
+                    <span class="marquee__item-name">VSCode</span>
+                </div>
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">🎯</span>
+                    <span class="marquee__item-name">Figma</span>
+                </div>
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">🌊</span>
+                    <span class="marquee__item-name">Tailwind CSS</span>
+                </div>
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">🐙</span>
+                    <span class="marquee__item-name">GitHub</span>
+                </div>
+            </div>
+
+            <!-- Track 2 (duplicate for seamless loop) -->
+            <div class="marquee__track">
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">✨</span>
+                    <span class="marquee__item-name">Gemini</span>
+                </div>
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">🤖</span>
+                    <span class="marquee__item-name">ChatGPT</span>
+                </div>
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">🎨</span>
+                    <span class="marquee__item-name">Canva</span>
+                </div>
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">🖌️</span>
+                    <span class="marquee__item-name">Photoshop</span>
+                </div>
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">✏️</span>
+                    <span class="marquee__item-name">Illustrator</span>
+                </div>
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">💻</span>
+                    <span class="marquee__item-name">VSCode</span>
+                </div>
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">🎯</span>
+                    <span class="marquee__item-name">Figma</span>
+                </div>
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">🌊</span>
+                    <span class="marquee__item-name">Tailwind CSS</span>
+                </div>
+                <div class="marquee__item">
+                    <span class="marquee__item-icon">🐙</span>
+                    <span class="marquee__item-name">GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+       SECTION 6 — POSTER COLLECTION
+       ============================================ -->
+    <section class="posters section-padding" id="gallery">
+        <div class="container">
+            <!-- Heading -->
+            <div class="posters__heading scroll-reveal">
+                <h2>POSTER COLLECTION</h2>
+                <p>Karya visual untuk Indonesia</p>
+            </div>
+
+            <!-- CSS-Only Carousel using radio buttons -->
+            <div class="carousel" id="carousel">
+                <!-- Hidden radio inputs for slide control -->
+                <input type="radio" name="carousel" id="slide1" class="carousel__radio" checked />
+                <input type="radio" name="carousel" id="slide2" class="carousel__radio" />
+                <input type="radio" name="carousel" id="slide3" class="carousel__radio" />
+                <input type="radio" name="carousel" id="slide4" class="carousel__radio" />
+
+                <!-- Arrow buttons (prev/next for each slide state) -->
+                <div class="carousel__arrows">
+                    <!-- When slide 1 is active: prev=4, next=2 -->
+                    <label for="slide4" class="carousel__arrow carousel__arrow--prev carousel__arrow--s1"
+                        aria-label="Previous Poster">&#8592;</label>
+                    <label for="slide2" class="carousel__arrow carousel__arrow--next carousel__arrow--s1"
+                        aria-label="Next Poster">&#8594;</label>
+                    <!-- When slide 2 is active: prev=1, next=3 -->
+                    <label for="slide1" class="carousel__arrow carousel__arrow--prev carousel__arrow--s2"
+                        aria-label="Previous Poster">&#8592;</label>
+                    <label for="slide3" class="carousel__arrow carousel__arrow--next carousel__arrow--s2"
+                        aria-label="Next Poster">&#8594;</label>
+                    <!-- When slide 3 is active: prev=2, next=4 -->
+                    <label for="slide2" class="carousel__arrow carousel__arrow--prev carousel__arrow--s3"
+                        aria-label="Previous Poster">&#8592;</label>
+                    <label for="slide4" class="carousel__arrow carousel__arrow--next carousel__arrow--s3"
+                        aria-label="Next Poster">&#8594;</label>
+                    <!-- When slide 4 is active: prev=3, next=1 -->
+                    <label for="slide3" class="carousel__arrow carousel__arrow--prev carousel__arrow--s4"
+                        aria-label="Previous Poster">&#8592;</label>
+                    <label for="slide1" class="carousel__arrow carousel__arrow--next carousel__arrow--s4"
+                        aria-label="Next Poster">&#8594;</label>
+                </div>
+
+                <div class="carousel__viewport">
+                    <div class="carousel__track">
+
+                        <!-- Slide 1 -->
+                        <div class="carousel__slide">
+                            <div class="carousel__image">
+                                <img src="assets/poster1.jpg" alt="Poster 1 — Semangat Merah Putih" />
+                            </div>
+                            <div class="carousel__info">
+                                <div class="carousel__number">01</div>
+                                <h3 class="carousel__title">SEMANGAT MERAH PUTIH</h3>
+                                <div class="carousel__story">
+                                    <h4>Story</h4>
+                                    <p>Poster ini menggambarkan kobaran semangat kemerdekaan yang tak pernah padam.
+                                        Warna
+                                        merah melambangkan keberanian, sementara putih mencerminkan kesucian niat
+                                        bangsa.
+                                    </p>
+                                </div>
+                                <div class="carousel__meaning">
+                                    <h4>Meaning</h4>
+                                    <p>Mewakili tekad generasi muda untuk terus membawa perubahan positif melalui
+                                        inovasi
+                                        dan kolaborasi tanpa batas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carousel__slide">
+                            <div class="carousel__image">
+                                <img src="assets/poster2.jpg" alt="Poster 2 — Nusantara Bersatu" />
+                            </div>
+                            <div class="carousel__info">
+                                <div class="carousel__number">02</div>
+                                <h3 class="carousel__title">NUSANTARA BERSATU</h3>
+                                <div class="carousel__story">
+                                    <h4>Story</h4>
+                                    <p>Menampilkan keragaman budaya Indonesia yang menyatu dalam satu tujuan. Dari
+                                        Sabang
+                                        sampai Merauke, perbedaan menjadi kekuatan.</p>
+                                </div>
+                                <div class="carousel__meaning">
+                                    <h4>Meaning</h4>
+                                    <p>Bhinneka Tunggal Ika — berbeda-beda tetapi tetap satu. Keberagaman bukan
+                                        penghalang,
+                                        melainkan kekayaan yang harus dirayakan.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="carousel__slide">
+                            <div class="carousel__image">
+                                <img src="assets/poster3.jpg" alt="Poster 3 — Indonesia Emas 2045" />
+                            </div>
+                            <div class="carousel__info">
+                                <div class="carousel__number">03</div>
+                                <h3 class="carousel__title">INDONESIA EMAS 2045</h3>
+                                <div class="carousel__story">
+                                    <h4>Story</h4>
+                                    <p>Visi besar menuju Indonesia Emas 2045. Generasi muda sebagai penggerak utama
+                                        transformasi digital dan pembangunan berkelanjutan.</p>
+                                </div>
+                                <div class="carousel__meaning">
+                                    <h4>Meaning</h4>
+                                    <p>Setiap langkah kecil hari ini adalah investasi untuk masa depan Indonesia yang
+                                        gemilang dan berdaulat di kancah global.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="carousel__slide">
+                            <div class="carousel__image">
+                                <img src="assets/poster4.png" alt="Poster 4 — Berkarya untuk Bangsa" />
+                            </div>
+                            <div class="carousel__info">
+                                <div class="carousel__number">04</div>
+                                <h3 class="carousel__title">BERKARYA UNTUK BANGSA</h3>
+                                <div class="carousel__story">
+                                    <h4>Story</h4>
+                                    <p>Poster ini mengajak setiap individu untuk berkontribusi melalui karya nyata.
+                                        Teknologi dan kreativitas menjadi senjata baru generasi digital.</p>
+                                </div>
+                                <div class="carousel__meaning">
+                                    <h4>Meaning</h4>
+                                    <p>Kemerdekaan sejati adalah ketika setiap warga mampu berkarya, berinovasi, dan
+                                        memberikan dampak positif bagi Indonesia.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CSS-Only Navigation (dots + arrows) -->
+                <div class="carousel__nav">
+                    <div class="carousel__dots">
+                        <label for="slide1" class="carousel__dot" aria-label="Poster 1"></label>
+                        <label for="slide2" class="carousel__dot" aria-label="Poster 2"></label>
+                        <label for="slide3" class="carousel__dot" aria-label="Poster 3"></label>
+                        <label for="slide4" class="carousel__dot" aria-label="Poster 4"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+       FOOTER
+       ============================================ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <!-- Logo -->
+                <div class="footer__logo">
+                    <img src="assets/logo-udinus.png" alt="Logo UDINUS" />
+                    <span>Team UDINUS</span>
+                </div>
+
+                <!-- Text -->
+                <p class="footer__text">
+                    Dirgahayu Republik Indonesia ke-81<br />
+                    Dibuat dengan semangat dan cinta untuk bangsa.
+                </p>
+
+                <div class="footer__divider"></div>
+
+                <!-- Copyright -->
+                <p class="footer__copyright">
+                    © 2026 Team UDINUS — Universitas Dian Nuswantoro. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- No JavaScript needed — all interactions are CSS-only! -->
+
+</body>
+
+</html>
